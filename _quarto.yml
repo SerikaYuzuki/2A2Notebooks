@@ -29,11 +29,14 @@ website:
 
 format:
   html:
+    mainfont: Hiragino
     theme: 
       light: cosmo
       dark: darkly
     css: styles.css
     toc: true
     toc-location: right
+    header-includes: |
+      <link rel="stylesheet" media="screen" href="font/Hiragino.ttc" type="text/css"/>
 
 
