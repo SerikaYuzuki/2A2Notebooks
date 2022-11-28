@@ -4,20 +4,69 @@
     "href": "index.html",
     "title": "2A2Notebooks",
     "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+    "text": "このページは最初のページだよ．そのうちいろんな情報を貼り付けていくので，充実まで待ってね！"
   },
   {
     "objectID": "index.html#asldkfjlak",
     "href": "index.html#asldkfjlak",
     "title": "2A2Notebooks",
     "section": "asl;dkfj;lak",
-    "text": "asl;dkfj;lak\nasd faas df"
+    "text": "asl;dkfj;lak\n\n\n\ntest image\n\n\nasd faas df"
   },
   {
     "objectID": "about.html",
     "href": "about.html",
-    "title": "About",
+    "title": "著者と編集方法などについて",
     "section": "",
-    "text": "About this site"
+    "text": "このページの編集者は柚木芹香（通称風船がむ）です．自分自身の勉強のためと，遺産として残すためにプロジェクトを開始しました．"
+  },
+  {
+    "objectID": "about.html#education",
+    "href": "about.html#education",
+    "title": "著者と編集方法などについて",
+    "section": "Education",
+    "text": "Education\nUniversity of California, San Diego | San Diego, CA PhD in Mathematics | Sept 2011 - June 2015\nMacalester College | St. Paul MA B.A in Economics | Sept 2007 - June 2011"
+  },
+  {
+    "objectID": "about.html#experience",
+    "href": "about.html#experience",
+    "title": "著者と編集方法などについて",
+    "section": "Experience",
+    "text": "Experience\nWengo Analytics | Head Data Scientist | April 2018 - present\nGeoScynce | Chief Analyst | Spet 2012 - April 2018"
+  },
+  {
+    "objectID": "about.html#編集方法",
+    "href": "about.html#編集方法",
+    "title": "著者と編集方法などについて",
+    "section": "編集方法",
+    "text": "編集方法\nこのページはquartoによって編集され，GitHub Pagesによってアップロードされています．プロジェクトはGitHubのリポジトリ自体なので，Pull Requestしていただくか，Forkしてお使いください．"
+  },
+  {
+    "objectID": "about.html#自己紹介",
+    "href": "about.html#自己紹介",
+    "title": "著者と編集方法などについて",
+    "section": "自己紹介",
+    "text": "自己紹介\n25年卒のDiscord管理者をしている野郎です．友達を作るのが好きなので，Twitterをフォローしていただいたり，DMいただいたりしたらめちゃくちゃ喜びます．"
+  },
+  {
+    "objectID": "index.html#要約",
+    "href": "index.html#要約",
+    "title": "2A2Notebooks",
+    "section": "要約",
+    "text": "要約\nこのページは最初のページだよ．そのうちいろんな情報を貼り付けていくので，充実まで待ってね！"
+  },
+  {
+    "objectID": "index.html#これからの話",
+    "href": "index.html#これからの話",
+    "title": "2A2Notebooks",
+    "section": "これからの話",
+    "text": "これからの話\nそのうち，面白い計画を話していくよ"
+  },
+  {
+    "objectID": "index.html#宣伝欄",
+    "href": "index.html#宣伝欄",
+    "title": "2A2Notebooks",
+    "section": "宣伝欄",
+    "text": "宣伝欄\n何か宣伝したいことがあったら言ってくれればここに貼っていくよ！\nとりあえず，私が運営しているDiscordとTwitterを置いておくね！\n\n\n\n\n\n\n持続性について\n\n\n\nこのプロジェクトがどこまで続くかはわからないよ！"
   }
 ]

@@ -2,13 +2,22 @@
 title: "2A2Notebooks"
 ---
 
-This is a Quarto website.
+## 要約
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+このページは最初のページだよ．そのうちいろんな情報を貼り付けていくので，充実まで待ってね！
 
-# asj
+## これからの話
 
-## asl;dkfj;lak
+そのうち，面白い計画を話していくよ
 
+## 宣伝欄
 
-asd faas df
+何か宣伝したいことがあったら言ってくれればここに貼っていくよ！
+
+とりあえず，私が運営している[Discord](https://discord.gg/gz9UeP2x2r)と[Twitter](https://twitter.com/ShuYohJo)を置いておくね！
+
+::: {.callout-warning}
+## 持続性について
+
+このプロジェクトがどこまで続くかはわからないよ！
+:::
