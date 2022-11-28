@@ -1,0 +1,38 @@
+project:
+  type: website
+
+
+website:
+  sidebar:
+    title: "風船ガムノート"
+    style: "floating"
+    search: true
+    type: dark
+    contents: auto
+    tools:
+    - icon: twitter
+      href: https://twitter.com
+    - icon: github
+      menu:
+        - text: Source Code
+          url:  https://code.com
+        - text: Report a Bug
+          url:  https://bugs.com
+    collapse-level: 10
+  repo-url: https://github.com/quarto-dev/quarto-demo
+  repo-actions: [edit, issue]
+  search: 
+    location: sidebar
+    type: textbox
+  
+
+format:
+  html:
+    theme: 
+      light: cosmo
+      dark: darkly
+    css: styles.css
+    toc: true
+    toc-location: right
+
+
