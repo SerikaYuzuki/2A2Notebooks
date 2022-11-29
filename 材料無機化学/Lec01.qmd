@@ -1,3 +1,66 @@
 ---
 title: "Lec01"
 ---
+
+# 原子軌道と周期律
+
+## 原子の姿
+
+- 原子という概念の成立
+
+    - 原子は電子と陽子を含む小さな粒子
+
+- 原子構造
+
+    - 中心付近に正電荷が極端に集中した核が存在しており，Rutherfordのアルファ線散乱実験で観測された
+
+- 水素原子の発光スペクトルの理解
+
+すいそ原子の示す不連続な原子スペクトルの式は
+
+$$\frac{1}{\lambda}=R\left(\frac{1}{n_1^2}-\frac{1}{n_2^2}\right)$$
+
+これを説明しようとしたボーアモデルは
+
+$$mrv=n\times \frac{h}{2\pi}$$
+
+$$r=\frac{n^2\epsilon h^2}{\pi me^2}$$
+
+$$E=\frac{1}{2}mv^2-\frac{e^2}{4\pi \epsilon r}=-\frac{me^4}{8\epsilon^2 h^2} \cdot \frac{1}{n^2}$$
+
+これがかなりうまくいく．ってのはもう材料量子力学でやったよね．
+
+## 電子軌道
+
+De Broglieの物質波の概念
+
+原子中の電子は，物質はが軌道に沿って一周し，位相が繋がって定在波ができる．
+
+$$p = \frac{h}{\lambda}$$
+
+$$\nabla^2 \Psi + \left( \frac{2\pi}{\lambda} \right)^2\Psi=0$$
+
+エネルギー保存則
+
+$$E=\frac{p^2}{2m}+V$$
+
+これらを組み合わせればシュレディンガーの波動方程式になる．
+
+$$\nabla^2 \Psi + \frac{8\pi m}{h^2}(E-V)\Psi=0$$
+
+特に水素原子に対しては次のようになる
+
+$$
+\psi_{n l m}(r, \theta, \phi)= \sqrt{\left(\frac{2}{n a_0}\right)^3} \frac{(n-l-1) !}{2 n\{(n+l) !\}} e^{-r / n a_0}\left(\frac{2 r}{n a_0}\right)^l L_{n-l-1}^{2 l+1}\left(\frac{2 r}{n a_0}\right) \cdot Y_l^m(\theta, \phi)$$
+
+$$ Y_l^m(\theta, \phi)=(-1)^{\frac{m+|m|}{2}} \sqrt{\frac{2 l+1}{4 \pi} \frac{(l-|m|) !}{(l+|m|) !} P_l^{m \mid}(\cos \theta) e^{i m \phi}}$$
+
+$L,P$はランゲール陪関数とルジャンドル陪関数である．
+
+ここで$l,m,n$３つの量子数が存在する事がシュレディンガー方程式が解を持つ条件となる．
+
+|量子数名|特徴|要請|
+|----|----|----|
+|n|K,L,...の殻||
+|l|s,p,...の軌道||
+|m|||

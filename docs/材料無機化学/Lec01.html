@@ -62,6 +62,7 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 <link rel="stylesheet" media="screen" href="font/Hiragino.ttc" type="text/css">
 
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <link rel="stylesheet" href="../styles.css">
 </head>
@@ -155,7 +156,17 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#原子軌道と周期律" id="toc-原子軌道と周期律" class="nav-link active" data-scroll-target="#原子軌道と周期律">原子軌道と周期律</a>
+  <ul class="collapse">
+  <li><a href="#原子の姿" id="toc-原子の姿" class="nav-link" data-scroll-target="#原子の姿">原子の姿</a></li>
+  <li><a href="#電子軌道" id="toc-電子軌道" class="nav-link" data-scroll-target="#電子軌道">電子軌道</a></li>
+  </ul></li>
+  </ul>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/quarto-dev/quarto-demo/edit/main/材料無機化学/Lec01.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/quarto-dev/quarto-demo/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -177,8 +188,75 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
+<section id="原子軌道と周期律" class="level1">
+<h1>原子軌道と周期律</h1>
+<section id="原子の姿" class="level2">
+<h2 class="anchored" data-anchor-id="原子の姿">原子の姿</h2>
+<ul>
+<li><p>原子という概念の成立</p>
+<ul>
+<li>原子は電子と陽子を含む小さな粒子</li>
+</ul></li>
+<li><p>原子構造</p>
+<ul>
+<li>中心付近に正電荷が極端に集中した核が存在しており，Rutherfordのアルファ線散乱実験で観測された</li>
+</ul></li>
+<li><p>水素原子の発光スペクトルの理解</p></li>
+</ul>
+<p>すいそ原子の示す不連続な原子スペクトルの式は</p>
+<p><span class="math display">\[\frac{1}{\lambda}=R\left(\frac{1}{n_1^2}-\frac{1}{n_2^2}\right)\]</span></p>
+<p>これを説明しようとしたボーアモデルは</p>
+<p><span class="math display">\[mrv=n\times \frac{h}{2\pi}\]</span></p>
+<p><span class="math display">\[r=\frac{n^2\epsilon h^2}{\pi me^2}\]</span></p>
+<p><span class="math display">\[E=\frac{1}{2}mv^2-\frac{e^2}{4\pi \epsilon r}=-\frac{me^4}{8\epsilon^2 h^2} \cdot \frac{1}{n^2}\]</span></p>
+<p>これがかなりうまくいく．ってのはもう材料量子力学でやったよね．</p>
+</section>
+<section id="電子軌道" class="level2">
+<h2 class="anchored" data-anchor-id="電子軌道">電子軌道</h2>
+<p>De Broglieの物質波の概念</p>
+<p>原子中の電子は，物質はが軌道に沿って一周し，位相が繋がって定在波ができる．</p>
+<p><span class="math display">\[p = \frac{h}{\lambda}\]</span></p>
+<p><span class="math display">\[\nabla^2 \Psi + \left( \frac{2\pi}{\lambda} \right)^2\Psi=0\]</span></p>
+<p>エネルギー保存則</p>
+<p><span class="math display">\[E=\frac{p^2}{2m}+V\]</span></p>
+<p>これらを組み合わせればシュレディンガーの波動方程式になる．</p>
+<p><span class="math display">\[\nabla^2 \Psi + \frac{8\pi m}{h^2}(E-V)\Psi=0\]</span></p>
+<p>特に水素原子に対しては次のようになる</p>
+<p><span class="math display">\[
+\psi_{n l m}(r, \theta, \phi)= \sqrt{\left(\frac{2}{n a_0}\right)^3} \frac{(n-l-1) !}{2 n\{(n+l) !\}} e^{-r / n a_0}\left(\frac{2 r}{n a_0}\right)^l L_{n-l-1}^{2 l+1}\left(\frac{2 r}{n a_0}\right) \cdot Y_l^m(\theta, \phi)\]</span></p>
+<p><span class="math display">\[ Y_l^m(\theta, \phi)=(-1)^{\frac{m+|m|}{2}} \sqrt{\frac{2 l+1}{4 \pi} \frac{(l-|m|) !}{(l+|m|) !} P_l^{m \mid}(\cos \theta) e^{i m \phi}}\]</span></p>
+<p><span class="math inline">\(L,P\)</span>はランゲール陪関数とルジャンドル陪関数である．</p>
+<p>ここで<span class="math inline">\(l,m,n\)</span>３つの量子数が存在する事がシュレディンガー方程式が解を持つ条件となる．</p>
+<table class="table">
+<thead>
+<tr class="header">
+<th>量子数名</th>
+<th>特徴</th>
+<th>要請</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>n</td>
+<td>K,L,…の殻</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>l</td>
+<td>s,p,…の軌道</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>m</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
 
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
