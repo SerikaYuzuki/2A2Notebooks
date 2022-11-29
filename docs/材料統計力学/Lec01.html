@@ -60,7 +60,9 @@ ul.task-list li input[type="checkbox"] {
     "search-submit-button-title": "Submit"
   }
 }</script>
+<link rel="stylesheet" media="screen" href="font/Hiragino.ttc" type="text/css">
 
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <link rel="stylesheet" href="../styles.css">
 </head>
@@ -86,20 +88,8 @@ ul.task-list li input[type="checkbox"] {
     <div class="sidebar-title mb-0 py-0">
       <a href="../">風船ガムノート</a> 
         <div class="sidebar-tools-main tools-wide">
-    <a href="https://twitter.com" title="" class="sidebar-tool px-1"><i class="bi bi-twitter"></i></a>
-    <a href="" title="" id="sidebar-tool-dropdown-0" class="sidebar-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-github"></i></a>
-    <ul class="dropdown-menu" aria-labelledby="sidebar-tool-dropdown-0">
-        <li>
-          <a class="dropdown-item sidebar-tools-main-item" href="https://code.com">
-          Source Code
-          </a>
-        </li>
-        <li>
-          <a class="dropdown-item sidebar-tools-main-item" href="https://bugs.com">
-          Report a Bug
-          </a>
-        </li>
-    </ul>
+    <a href="https://twitter.com/Serika_Yuzuki" title="" class="sidebar-tool px-1"><i class="bi bi-twitter"></i></a>
+    <a href="https://github.com/SerikaYuzuki" title="" class="sidebar-tool px-1"><i class="bi bi-github"></i></a>
   <a href="" class="quarto-color-scheme-toggle sidebar-tool" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
     </div>
@@ -166,7 +156,22 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#概要" id="toc-概要" class="nav-link active" data-scroll-target="#概要">概要</a></li>
+  <li><a href="#統計学における様々な過程や原理" id="toc-統計学における様々な過程や原理" class="nav-link" data-scroll-target="#統計学における様々な過程や原理">統計学における様々な過程や原理</a></li>
+  <li><a href="#check-point" id="toc-check-point" class="nav-link" data-scroll-target="#check-point">Check Point</a>
+  <ul class="collapse">
+  <li><a href="#統計力学とは" id="toc-統計力学とは" class="nav-link" data-scroll-target="#統計力学とは">統計力学とは？</a></li>
+  <li><a href="#エルゴード仮説とは" id="toc-エルゴード仮説とは" class="nav-link" data-scroll-target="#エルゴード仮説とは">エルゴード仮説とは？</a></li>
+  <li><a href="#ミクロカノニカルアンサンブルとは" id="toc-ミクロカノニカルアンサンブルとは" class="nav-link" data-scroll-target="#ミクロカノニカルアンサンブルとは">ミクロカノニカルアンサンブルとは？</a></li>
+  <li><a href="#カノニカルアンサンブルとは" id="toc-カノニカルアンサンブルとは" class="nav-link" data-scroll-target="#カノニカルアンサンブルとは">カノニカルアンサンブルとは？</a></li>
+  <li><a href="#等重率の原理とは" id="toc-等重率の原理とは" class="nav-link" data-scroll-target="#等重率の原理とは">等重率の原理とは？</a></li>
+  </ul></li>
+  </ul>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/quarto-dev/quarto-demo/edit/main/材料統計力学/Lec01.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/quarto-dev/quarto-demo/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -188,8 +193,92 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
+<section id="概要" class="level3">
+<h3 class="anchored" data-anchor-id="概要">概要</h3>
+<p>原子の振動のことをフォノンと呼んでいる．</p>
+<p>温度を上げる→フォノンの数が増えていく→電気抵抗が上がる．</p>
+<p>金属と半導体では上の振る舞いが逆になる．</p>
+<p>統計力学の目標は，多体系の解析と，熱力学の復習．</p>
+</section>
+<section id="統計学における様々な過程や原理" class="level3">
+<h3 class="anchored" data-anchor-id="統計学における様々な過程や原理">統計学における様々な過程や原理</h3>
+<p><strong>アンサンブル</strong> とは，<strong>巨視的に同じ条件下にある力学的に同じ系を無数に集めた仮想的な集団</strong>のことである</p>
+<p><strong>エルゴード仮説</strong> とは，<strong>平衡状態にある物理量の時間積分の平均は，ある時刻における多数の測定値の平均である，アンサンブル平均は一致する</strong>という仮定である．</p>
+<table class="table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>集団名</th>
+<th>状態</th>
+<th>重要な変数</th>
+<th>大事なエネルギー</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>ミクロカノニカルアンサンブル</td>
+<td>孤立系</td>
+<td>状態数<span class="math inline">\(W\)</span></td>
+<td><span class="math inline">\(S=k_b\ln W\)</span></td>
+</tr>
+<tr class="even">
+<td>カノニカルアンサンブル</td>
+<td>閉鎖系</td>
+<td>分配関数<span class="math inline">\(Z\)</span></td>
+<td>ヘルムホルツエネルギー<span class="math inline">\(F=-\frac{1}{\beta}\ln Z\)</span></td>
+</tr>
+<tr class="odd">
+<td>グランドカノニカルアンサンブル</td>
+<td>自由系</td>
+<td>大分配関数<span class="math inline">\(\Xi\)</span></td>
+<td>大分散エネルギー<span class="math inline">\(J=-\frac{1}{\beta}\ln \Xi\)</span></td>
+</tr>
+</tbody>
+</table>
+<p>ただし，<span class="math inline">\(\beta=\frac{1}{k_BT}\)</span></p>
+<p><strong>等重率の原理</strong> とは，<span class="math inline">\(N,V,E\)</span> で指定された巨視状態に対応するどの微視的状態をとっても，それがアンサンブル中に現れる確率は等しい．</p>
+<section id="磁気モーメントの略記法" class="level4">
+<h4 class="anchored" data-anchor-id="磁気モーメントの略記法">磁気モーメントの略記法</h4>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/TP1.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">磁気モーメント</figcaption><p></p>
+</figure>
+</div>
+<p>上のような状態のことを次のように書く．</p>
+<p><span class="math display">\[\uparrow_1 \uparrow_2 \downarrow_3 \uparrow_4 \downarrow_5 \downarrow_6 \uparrow_7 \uparrow_8 \downarrow_9\]</span></p>
+<p>矢印に対しては単純な乗算を定義できる．また次の式を母関数と呼ぶ</p>
+<p><span class="math display">\[\prod_i(\uparrow_i \downarrow_i)\]</span></p>
+<p>この値の数え上げ，つまり状態の数は<span class="math inline">\(2^N\)</span>ある．</p>
+</section>
+</section>
+<section id="check-point" class="level2">
+<h2 class="anchored" data-anchor-id="check-point">Check Point</h2>
+<section id="統計力学とは" class="level3">
+<h3 class="anchored" data-anchor-id="統計力学とは">統計力学とは？</h3>
+<p>エントロピーなどの状態量にミクロな視点からの定義を行い，状態量の関係である状態方程式をミクロな視点から導出する学問</p>
+</section>
+<section id="エルゴード仮説とは" class="level3">
+<h3 class="anchored" data-anchor-id="エルゴード仮説とは">エルゴード仮説とは？</h3>
+<p>平衡状態にある物理量の時間積分の平均は，ある時刻におけるアンサンブル平均は一致する</p>
+</section>
+<section id="ミクロカノニカルアンサンブルとは" class="level3">
+<h3 class="anchored" data-anchor-id="ミクロカノニカルアンサンブルとは">ミクロカノニカルアンサンブルとは？</h3>
+</section>
+<section id="カノニカルアンサンブルとは" class="level3">
+<h3 class="anchored" data-anchor-id="カノニカルアンサンブルとは">カノニカルアンサンブルとは？</h3>
+</section>
+<section id="等重率の原理とは" class="level3">
+<h3 class="anchored" data-anchor-id="等重率の原理とは">等重率の原理とは？</h3>
 
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
