@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>有機化学</title>
+<title>基礎熱力学</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -73,7 +73,7 @@ ul.task-list li input[type="checkbox"] {
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
     <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title">有機化学</h1>
+      <h1 class="quarto-secondary-nav-title">基礎熱力学</h1>
       <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
         <i class="bi bi-chevron-right"></i>
       </button>
@@ -116,7 +116,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../2A2講義/基礎熱力学.html" class="sidebar-item-text sidebar-link">基礎熱力学</a>
+  <a href="../2A2講義/基礎熱力学.html" class="sidebar-item-text sidebar-link active">基礎熱力学</a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -136,7 +136,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../2A2講義/有機化学.html" class="sidebar-item-text sidebar-link active">有機化学</a>
+  <a href="../2A2講義/有機化学.html" class="sidebar-item-text sidebar-link">有機化学</a>
   </div>
 </li>
       </ul>
@@ -153,7 +153,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block">有機化学</h1>
+<h1 class="title d-none d-lg-block">基礎熱力学</h1>
 </div>
 
 
@@ -168,9 +168,25 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p><span class="math inline">\(\usepackage{chemistry}\)</span></p>
-<p>モチベーションのために，半導体製造技術のために，有機反応過程の解析が活用されているらしい</p>
-<p>オクテッド則が満たされていない分子の例として，ジボランがある．この結合を３中心２電子結合と呼ばれる</p>
+<p><span class="math inline">\(\require{physics}\)</span></p>
+<p>A ,Bを定数とした時，気体について次の法則が成り立つ</p>
+<p><span class="math display">\[
+T=const. \implies \; P=A/V
+\]</span></p>
+<p><span class="math display">\[
+V=const. \implies \; P=BT
+\]</span></p>
+<p>この時に気体の状態方程式を導け．</p>
+<p>題意より，</p>
+<p><span class="math display">\[
+\begin{align*}
+\dd P &amp;= \left(\pdv{P}{V}\right)_T\dd V + \left(\pdv{P}{T}\right)_V \dd T\\
+&amp;= B\dd V -\frac{A}{V^2} \dd T\\
+&amp;=\frac{P}{T}\dd V-\frac{P}{V}\dd T\\
+\frac{\dd P}{P} &amp;= \frac{\dd V}{V} - \frac{\dd T}{T}\\
+\ln P &amp;= \ln V - \ln T
+\end{align*}
+\]</span></p>
 
 
 

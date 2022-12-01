@@ -1,0 +1,29 @@
+---
+title: "基礎熱力学"
+---
+
+$\require{physics}$
+
+A ,Bを定数とした時，気体について次の法則が成り立つ
+
+$$
+T=const. \implies \; P=A/V
+$$
+
+$$
+V=const. \implies \; P=BT
+$$
+
+この時に気体の状態方程式を導け．
+
+題意より，
+
+$$
+\begin{align*}
+\dd P &= \left(\pdv{P}{V}\right)_T\dd V + \left(\pdv{P}{T}\right)_V \dd T\\
+&= B\dd V -\frac{A}{V^2} \dd T\\
+&=\frac{P}{T}\dd V-\frac{P}{V}\dd T\\
+\frac{\dd P}{P} &= \frac{\dd V}{V} - \frac{\dd T}{T}\\
+\ln P &= \ln V - \ln T
+\end{align*}
+$$

@@ -124,5 +124,19 @@
     "title": "統計力学",
     "section": "Check Point",
     "text": "Check Point\n\n統計力学とは？\nエントロピーなどの状態量にミクロな視点からの定義を行い，状態量の関係である状態方程式をミクロな視点から導出する学問\n\n\nエルゴード仮説とは？\n平衡状態にある物理量の時間積分の平均は，ある時刻におけるアンサンブル平均は一致する\n\n\n等重率の原理とは？\n\\(N,V,E\\) で指定された巨視状態に対応するどの微視的状態をとっても，それがアンサンブル中に現れる確率は等しいという原理．"
+  },
+  {
+    "objectID": "2A2講義/有機化学.html",
+    "href": "2A2講義/有機化学.html",
+    "title": "有機化学",
+    "section": "",
+    "text": "\\(\\usepackage{chemistry}\\)\nモチベーションのために，半導体製造技術のために，有機反応過程の解析が活用されているらしい\nオクテッド則が満たされていない分子の例として，ジボランがある．この結合を３中心２電子結合と呼ばれる"
+  },
+  {
+    "objectID": "2A2講義/基礎熱力学.html",
+    "href": "2A2講義/基礎熱力学.html",
+    "title": "基礎熱力学",
+    "section": "",
+    "text": "\\(\\require{physics}\\)\nA ,Bを定数とした時，気体について次の法則が成り立つ\n\\[\nT=const. \\implies \\; P=A/V\n\\]\n\\[\nV=const. \\implies \\; P=BT\n\\]\nこの時に気体の状態方程式を導け．\n題意より，\n\\[\n\\begin{align*}\n\\dd P &= \\left(\\pdv{P}{V}\\right)_T\\dd V + \\left(\\pdv{P}{T}\\right)_V \\dd T\\\\\n&= B\\dd V -\\frac{A}{V^2} \\dd T\\\\\n&=\\frac{P}{T}\\dd V-\\frac{P}{V}\\dd T\\\\\n\\frac{\\dd P}{P} &= \\frac{\\dd V}{V} - \\frac{\\dd T}{T}\\\\\n\\ln P &= \\ln V - \\ln T\n\\end{align*}\n\\]"
   }
 ]
