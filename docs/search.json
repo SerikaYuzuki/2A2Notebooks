@@ -96,5 +96,33 @@
     "title": "Lec01",
     "section": "原子の姿",
     "text": "原子の姿\n\n原子という概念の成立\n\n原子は電子と陽子を含む小さな粒子\n\n原子構造\n\n中心付近に正電荷が極端に集中した核が存在しており，Rutherfordのアルファ線散乱実験で観測された\n\n水素原子の発光スペクトルの理解\n\n\\[\\frac{1}{\\lambda}=R\\qtr(\\frac{1}{n_1^2}-\\frac{1}{n_2^2})\\]"
+  },
+  {
+    "objectID": "2A2講義/自由研究.html",
+    "href": "2A2講義/自由研究.html",
+    "title": "自由研究",
+    "section": "",
+    "text": "import matplotlib.pyplot as plt\nimport numpy as np\nfrom matplotlib.animation import FuncAnimation\nfrom scipy.integrate import odeint\n\ndef ode(f, t):\n    y, v = f\n    dfdt = [v, -G]\n    return dfdt\n\nG  = 9.8        # [m/s^2] gravitational acceleration\nV0 = 20         # [m/s]   initial velocity\nDURATION = 10   # [s] duration time\nINTERVAL = 0.1  # [s] interval time\n\nf0 = [0, V0]    # [y, v] at t = 0\nt = np.arange(0, DURATION + INTERVAL, INTERVAL)\n\nsol = odeint(ode, f0, t)\n\n\n\nfig = plt.figure()\nax = fig.add_subplot(111, aspect='equal', autoscale_on=False, xlim=(-100, 100), ylim=(-500, 100))\nax.grid()\n\nball, = plt.plot([], [], 'ro', animated=True)\n\ndef init():\n    return ball,\n\ndef update(y):\n    ball.set_data(0, y)\n    return ball,\n\nFRAME_INTERVAL = 1000 * INTERVAL # [msec] interval between frames\nFPS = 1000/FRAME_INTERVAL # frames per second\n\nani = FuncAnimation(fig, update, frames=sol[:, 0],\n                    init_func=init, blit=True, interval=FRAME_INTERVAL, repeat=True)\nplt.show()"
+  },
+  {
+    "objectID": "2A2講義/無機化学.html",
+    "href": "2A2講義/無機化学.html",
+    "title": "無機化学",
+    "section": "",
+    "text": "原子という概念の成立\n\n原子は電子と陽子を含む小さな粒子\n\n原子構造\n\n中心付近に正電荷が極端に集中した核が存在しており，Rutherfordのアルファ線散乱実験で観測された\n\n水素原子の発光スペクトルの理解\n\nすいそ原子の示す不連続な原子スペクトルの式は\n\\[\\frac{1}{\\lambda}=R\\left(\\frac{1}{n_1^2}-\\frac{1}{n_2^2}\\right)\\]\nこれを説明しようとしたボーアモデルは\n\\[mrv=n\\times \\frac{h}{2\\pi}\\]\n\\[r=\\frac{n^2\\epsilon h^2}{\\pi me^2}\\]\n\\[E=\\frac{1}{2}mv^2-\\frac{e^2}{4\\pi \\epsilon r}=-\\frac{me^4}{8\\epsilon^2 h^2} \\cdot \\frac{1}{n^2}\\]\nこれがかなりうまくいく．ってのはもう材料量子力学でやったよね．\n\n\n\nDe Broglieの物質波の概念\n原子中の電子は，物質はが軌道に沿って一周し，位相が繋がって定在波ができる．\n\\[p = \\frac{h}{\\lambda}\\]\n\\[\\nabla^2 \\Psi + \\left( \\frac{2\\pi}{\\lambda} \\right)^2\\Psi=0\\]\nエネルギー保存則\n\\[E=\\frac{p^2}{2m}+V\\]\nこれらを組み合わせればシュレディンガーの波動方程式になる．\n\\[\\nabla^2 \\Psi + \\frac{8\\pi m}{h^2}(E-V)\\Psi=0\\]\n特に水素原子に対しては次のようになる\n\\[\n\\psi_{n l m}(r, \\theta, \\phi)= \\sqrt{\\left(\\frac{2}{n a_0}\\right)^3} \\frac{(n-l-1) !}{2 n\\{(n+l) !\\}} e^{-r / n a_0}\\left(\\frac{2 r}{n a_0}\\right)^l L_{n-l-1}^{2 l+1}\\left(\\frac{2 r}{n a_0}\\right) \\cdot Y_l^m(\\theta, \\phi)\\]\n\\[ Y_l^m(\\theta, \\phi)=(-1)^{\\frac{m+|m|}{2}} \\sqrt{\\frac{2 l+1}{4 \\pi} \\frac{(l-|m|) !}{(l+|m|) !} P_l^{m \\mid}(\\cos \\theta) e^{i m \\phi}}\\]\n\\(L,P\\)はランゲール陪関数とルジャンドル陪関数である．\nここで\\(l,m,n\\)３つの量子数が存在する事がシュレディンガー方程式が解を持つ条件となる．\n\n\n\n量子数名\n特徴\n要請\n\n\n\n\nn\nK,L,…の殻\n\n\n\nl\ns,p,…の軌道\n\n\n\nm"
+  },
+  {
+    "objectID": "2A2講義/統計力学.html",
+    "href": "2A2講義/統計力学.html",
+    "title": "統計力学",
+    "section": "",
+    "text": "原子の振動のことをフォノンと呼んでいる．\n温度を上げる→フォノンの数が増えていく→電気抵抗が上がる．\n金属と半導体では上の振る舞いが逆になる．\n統計力学の目標は，多体系の解析と，熱力学の復習．"
+  },
+  {
+    "objectID": "2A2講義/統計力学.html#check-point",
+    "href": "2A2講義/統計力学.html#check-point",
+    "title": "統計力学",
+    "section": "Check Point",
+    "text": "Check Point\n\n統計力学とは？\nエントロピーなどの状態量にミクロな視点からの定義を行い，状態量の関係である状態方程式をミクロな視点から導出する学問\n\n\nエルゴード仮説とは？\n平衡状態にある物理量の時間積分の平均は，ある時刻におけるアンサンブル平均は一致する\n\n\n等重率の原理とは？\n\\(N,V,E\\) で指定された巨視状態に対応するどの微視的状態をとっても，それがアンサンブル中に現れる確率は等しいという原理．"
   }
 ]

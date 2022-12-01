@@ -1,0 +1,50 @@
+---
+title: "自由研究"
+---
+
+## 単振動の図示
+
+
+```{python}
+import matplotlib.pyplot as plt
+import numpy as np
+from matplotlib.animation import FuncAnimation
+from scipy.integrate import odeint
+
+def ode(f, t):
+    y, v = f
+    dfdt = [v, -G]
+    return dfdt
+
+G  = 9.8        # [m/s^2] gravitational acceleration
+V0 = 20         # [m/s]   initial velocity
+DURATION = 10   # [s] duration time
+INTERVAL = 0.1  # [s] interval time
+
+f0 = [0, V0]    # [y, v] at t = 0
+t = np.arange(0, DURATION + INTERVAL, INTERVAL)
+
+sol = odeint(ode, f0, t)
+
+
+
+fig = plt.figure()
+ax = fig.add_subplot(111, aspect='equal', autoscale_on=False, xlim=(-100, 100), ylim=(-500, 100))
+ax.grid()
+
+ball, = plt.plot([], [], 'ro', animated=True)
+
+def init():
+    return ball,
+
+def update(y):
+    ball.set_data(0, y)
+    return ball,
+
+FRAME_INTERVAL = 1000 * INTERVAL # [msec] interval between frames
+FPS = 1000/FRAME_INTERVAL # frames per second
+
+ani = FuncAnimation(fig, update, frames=sol[:, 0],
+                    init_func=init, blit=True, interval=FRAME_INTERVAL, repeat=True)
+plt.show()
+```
