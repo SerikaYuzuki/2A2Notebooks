@@ -21,3 +21,10 @@ title: "2A2Notebooks"
 
 このプロジェクトがどこまで続くかはわからないよ！
 :::
+
+$$dvy50dt = omega2 * ((arg1*(x49 - x50)+ arg2*(y49 - y50)) - (arg1*(x50 - x51)+ arg2*(y50 - y51)))$$
+
+```{python}
+i = 50
+print('dy' + str(100+i) + 'dt, dxy' + str(100+i) + 'dt', end=', ')
+```
